@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tree view</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<div class="tree" id="tree">
+    <ul class="Container">
+        <li class="ExpandClosed">
+            <a href="#" title="You">Mary Levy</a>
+            <ul class="Container">
+                <li class="ExpandClosed">
+                    <a href="#">parent1</a>
+                    <ul class="Container">
+                        <li><a href="#" title="mother">Carmella Rodgers</a></li>
+                        <li><a href="#" title="uncle">Simon Ross</a></li>
+                        <li><a href="#" title="aunt">Irma Richards</a></li>
+                    </ul>
+                </li>
+                <li class="ExpandClosed">
+                    <a href="#">parent2</a>
+                    <ul class="Container">
+                        <li><a href="#" title="father">Cross Hood</a></li>
+                        <li><a href="#" title="auth">Bray Haley</a></li>
+                    </ul>
+                </li>
+                <li class="ExpandClosed">
+                    <a href="#">parent3</a>
+                    <ul class="Container">
+                        <li><a href="#" title="daughter">Henrietta Gilmore</a></li>
+                        <li><a href="#" title="son">Huber French</a></li>
+                    </ul>
+                </li>
+                <li class="ExpandClosed">
+                    <a href="#">parent4</a>
+                    <ul class="Container">
+                        <li><a href="#" title="brother">Roy Flynn</a></li>
+                        <li><a href="#" title="brother">Rocha Donaldson</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+<script>
+    var form = document.getElementById('tree');
+
+    form.onclick = function (event) {
+        event.target.parentNode.classList.toggle("ExpandClosed");
+    };
+
+
+</script>
+</body>
+</html>
